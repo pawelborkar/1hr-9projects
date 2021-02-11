@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button {
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(226, 29, 253, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    color: white;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.1s linear;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    box-shadow: 0;
+    transform: translate(2px, 2px);
+}

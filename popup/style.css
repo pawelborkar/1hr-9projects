@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    min-height: 100vh;
+}
+
+.pop-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(226, 29, 253, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.pop-container.active {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+.popup {
+    /* background-color: #fff; */
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(226, 29, 253, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    position: relative;
+    width: 500px;
+}
+
+.popup button {
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
